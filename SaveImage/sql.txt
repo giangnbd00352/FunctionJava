@@ -1,0 +1,14 @@
+create database Imagedb;
+
+create table PERSON
+(
+ID              BIGINT not null,
+NAME            VARCHAR(50) not null,
+IMAGE_DATA      LONGBLOB not null,
+IMAGE_FILE_NAME VARCHAR(30) not null
+) ;
+ 
+alter table PERSON
+add constraint PERSON_PK primary key (ID);
+
+/* add lib mysql connector */
